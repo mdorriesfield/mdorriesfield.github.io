@@ -1,106 +1,215 @@
-body {
-	background-color: LightGray;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Curriculum vitae</title>
+<link rel = "stylesheet"
+	type = "text/css"
+	href = "mycss.css"/>
 
-/* Formatting for page, setting apart from the body behind */
-#page {max-width: 1000px;
-	margin: 10px auto 10px auto;
-	padding: 20px;
-	border-width:2px;
-	border-style:solid;
-	border-color:black;
-	background-color: white;
-	font-family: Georgia, Times, serif;
-}
+<!-- from https://www.w3schools.com/css/css_rwd_viewport.asp -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-
-h3 {
-	font-size: 1.1em
-}
-
-p {
-	padding: 5px;
-	margin: 10px;	
-}
-
-li {
-	line-height: 1.5em;}
-
-.banner {
-	width: 100%
-}
-
-/* Code for Navbar */
-/* adapted from https://www.w3schools.com/css/css_navbar_horizontal.asp */
-.navbar {
-	list-style-type: none;	
-	margin: 0;
-	padding: 0;
-	overflow:hidden;
-	background-color: hsl(115, 67%, 37%);}
-.linav {
-	float: left;
-}
-.linav a {
-	display: block;
-	color: white;
-	text-align: center;
-	padding: 10px 15px;
-	text-decoration: none;
-	font-size: 18px
-}
-.linav a:hover {
-	background-color: hsl(115, 67%, 43%);
-}
-
-/* Formatting for CV Page */
-/* Formatting Headers in CV */
-.sectionheader {
-	text-transform: uppercase;
-}
-.jobtitle {
-	width: 50%;
-	text-align: left;
-}
-.jobdate {
-	width: 50%;
-	float: right;
-	text-align: right;
-}
-.jobheader {
-	margin-bottom: 5px;
-	font-weight: bold;
-	margin-bottom: 2px}
-.employer {
-	margin-top: 2px;
-	font-weight: bold;
-}
-
-/* Formatting for About Me Page */
-
-/* formatting of insert photos*/
-.insertphoto {
-	margin: 5px 20px;
-}
-.GBBOPortrait {
-	float: left;
-	margin: 5px 20px 15px 20px;
-}
-.GWWA {
-	float:right;
-}
-.JBPortrait {
-	float:left;
-}
-/* formatting for links at bottom*/
-/*inspiration from http://www.onshorebirding.com/about.html */
-.linkslist {list-style-type: none;
-	margin: 10px;
-	padding: 5px;
-}
-.link a:link {
-	color: black;
-}
-.link a:visited {
-	color: black;
-}
+</head>
+<body>
+<div id="page">
+	<!-- Here is a navigation bar -->
+	<div class="navbar">
+		<ul class="navbar">
+			<li class="linav"><a href="index.html">Introduction</a></li>
+			<li class="linav"><a href="cv.html">CV</a></li>
+		</ul>
+	</div>
+	<div class="banner">
+		<!--5 of 5 unique photographs -->
+		<img class="banner" src="images/AlamosBanner.jpg" alt="Tropical Deciduous Forest">
+	</div>
+	<div class="section" id="skills">
+		<h2 class="sectionheader">Skills</h2>
+		<p><b>Bird Identification:</b> Extensive experience identifying North American birds by sight and sound,
+		both Eastern (Ontario and Manitoba) and Western (Nevada and Arizona). Also considerable experience
+		in the Neotropics (Costa Rica and Ecuador).</p>
+		<p><b>Plant Identification:</b> Extensive knowledge of woody and herbaceous pants throughout the Great Basin,
+		Mojave, and Sonoran Deserts. Strong knowledge of Ontario tree species and working knowledge of forbs and shrubs.</p>
+		<p><b>Fitness/Safety:</b> Comfortable hiking long distances through difficult terrain (mountainous, boggy, or muddy),
+		in varying temperatures (>40C to below freezing) and adverse weather conditions. Have conducted fieldwork in such 
+		conditions for up to 16 days without rest. Have worked safely in bear, mountain lion, and rattlesnake country.</p>
+		<p><b>Interpersonal Skills:</b> Equally comfortable working alone, with a partner, or a small crew, often in above mentioned
+		difficult field conditions. Experienced working with the public in both in both outdoor guiding and classroom settings.</p>
+		<p><b>Navigation and Transportation:</b> Capable of navigating the wilderness using GPS, map, and compass. Comfortable traveling 
+		on foot, by 4WD vehicle on rocky mountainous roads, on water by canoe, or by helicopter.</p>
+	</div>
+	<div class="section" id="education">
+		<h2 class="sectionheader">Education</h2>
+		<div class="job">
+			<h3 class="jobheader"><span class="jobtitle">GIS - Applications Specialist</span><span class="jobdate">Sept 2020 - Present</span></h3>
+			<h3 class="employer">Fleming College</h3>
+		</div>
+		<div class="job">
+			<h3 class="jobheader"><span class="jobtitle">B.Sc. Wildlife Biology and Conservation</span>
+			<span class="jobdate">2011 - 2016</span></h3>
+			<h3 class="employer">University of Guelph</h3>
+		</div>
+	</div>
+	<div class="section" id="jobexperience">
+		<h2 class="sectionheader">Work Experience</h2>
+		<div class="job">
+			<h3 class="jobheader"><span class="jobtitle">Field Biologist</span><span class="jobdate">Aug 2020</span></h3>
+			<h3 class="employer">Natural Resource Solutions Inc.</h3>
+				<ul>
+					<li>Conducted post-construction mortality monitoring at an operational wind farm</li>
+					<li>Identified and processed dead birds and bats safely and effectively</li>
+				</ul>
+		</div>
+		<div class="job">
+			<h3 class="jobheader"><span class="jobtitle">Avian Field Biologist</span><span class="jobdate">Jun - Jul 2020</span></h3>
+			<h3 class="employer">Beacon Environmental</h3>
+				<ul>
+					<li>Surveyed and mapped breeding birds present on sites up to 92 ha in size, paying particular attention to species at risk</li>
+					<li>Coordinated with project managers and landowners to schedule surveys</li>
+				</ul>
+		</div>
+		<div class="job">
+			<h3 class="jobheader"><span class="jobtitle">Audio Transcription Technician</span><span class="jobdate">Dec 2019 – Apr 2020</span></h3>
+			<h3 class="employer">Birds Canada</h3>
+			<ul>
+				<li>Identified and tagged all birds detected by song and call during 3-10 minute audio recordings using Wildtrax software</li>
+				<li>Proofed transcriptions of other users</li>
+			</ul>
+		</div>
+		<div class="job">
+			<h3 class="jobheader"><span class="jobtitle">Avian Research Technician</span><span class="jobdate">(4 Seasons) Apr - Jul 2015/16/18/19</span></h3>
+			<h3 class="employer">Great Basin Bird Observatory</h3>	
+			<ul>
+				<li>Conducted 1400 distance-based point counts in desert, riparian, and montane ecosystems</li>
+				<li>Conducted rapid angle-order and intensive point-intercept vegetation surveys of both woody and herbaceous plants</li>
+				<li>Searched for nests and mapped the territories of all species present during the season on a 20 hectare plot</li>
+				<li>Worked at night surveying lagomorphs and other nocturnal mammals by spotlight</li>
+				<li>Trained incoming crew members on survey protocols, bird and plant identification</li>
+			</ul>
+		</div>
+		<div class="job">
+			<h3 class="jobheader"><span class="jobtitle">Avian Field Technician</span><span class="jobdate">(2 seasons) Mar - Apr 2018-19</span></h3>
+			<h3 class="employer">Great Basin Bird Observatory</h3>	
+			<ul>
+				<li>Set up and maintained 5 small mammal trap lines in pinyon-juniper habitat</li>
+				<li>Safely processed, identified, marked, and released over 500 rodents of 8 species</li>
+			</ul>
+		</div>	
+		<div class="job">
+			<h3 class="jobheader"><span class="jobtitle">Small Mammal Research Technician</span><span class="jobdate">Jul - Sep 2018</span></h3>
+			<h3 class="employer">Great Basin Bird Observatory</h3>	
+			<ul>
+				<li>Set up and maintained 5 small mammal trap lines in pinyon-juniper habitat</li>
+				<li>Safely processed, identified, marked, and released over 500 rodents of 8 species</li>
+			</ul>
+		</div>				
+		<div class="job">
+			<h3 class="jobheader"><span class="jobtitle">Shorebird Survey Technician</span><span class="jobdate">Jul - Sep 2017</span></h3>
+			<h3 class="employer">Trent University</h3>	
+			<ul>
+				<li>Re-sighted coloured leg flags on Red Knots and other species</li>
+				<li>Conducted daily surveys shorebird surveys, identifying and aging all individuals present</li>
+				<li>Assisted with benthic invertebrate sampling</li>
+			</ul>
+		</div>	
+		<div class="job">
+			<h3 class="jobheader"><span class="jobtitle">Mexican Spotted Owl Field Technician</span><span class="jobdate">Apr - Jul 2017</span></h3>
+			<h3 class="employer">Bird Conservancy of the Rockies</h3>	
+			<ul>
+				<li>Conducted 100 broadcast surveys for Mexican Spotted Owls, recorded and mapped all owl species detected</li>
+				<li>Deployed and collected Automated Recording Units at study sites</li>
+			</ul>
+		</div>				
+		<div class="job">
+			<h3 class="jobheader"><span class="jobtitle">Avian Point Count Technician</span><span class="jobdate">(2 seasons) May - Aug 2013/14</span></h3>
+			<h3 class="employer">Manitoba Breeding Bird Atlas/Birds Canada</h3>	
+			<ul>
+				<li>Conducted over 1110 avian point counts in boreal and parkland ecosystems</li>
+				<li>Looked for breeding confirmation of all species possible, both on survey or incidentally</li>
+			</ul>
+		</div>
+		<div class="job">
+			<h3 class="jobheader"><span class="jobtitle">Golden-winged Warbler Field Technician</span><span class="jobdate">May - Aug 2012</span></h3>
+			<h3 class="employer">Birds Canada</h3>	
+			<ul>
+				<li>Mapped territories and searched for nests on over 20 Golden-winged Warbler territories</li>
+				<li>Mist-netted and colour banded territorial males and nesting females</li>
+				<li>Surveyed vegetation at over 50 plots both at nest sites and random points on </li>
+			</ul>
+		</div>	
+	</div>
+	<div class="section" id="volunteerexperience">
+		<h2 class="sectionheader">Volunteer Experience</h2>
+		<div class="job">
+			<h3 class="jobheader"><span class="jobtitle">Birding Guide</span><span class="jobdate">Sep - Oct 2019</span></h3>
+			<h3 class="employer">Bolita Rainforest Hostel</h3>	
+			<ul>
+				<li>Led hostel guests on both days and night hikes to observe birds and other wildlife</li>
+				<li>Surveyed the property daily to monitor bird species present and add data to the property’s eBird Hotspot</li>
+				<li>Collected information on and photos of wildlife and wildlife viewing to be used promoting the hostel</li>
+			</ul>
+		</div>
+		<div class="job">
+			<h3 class="jobheader"><span class="jobtitle">Nature Interpreter</span><span class="jobdate">Nov 2017 - Jan 2018</span></h3>
+			<h3 class="employer">Monteverde Butterfly Gardens</h3>	
+			<ul>
+				<li>Lead enthusiastic and engaging interpretive tours of our captive insect collection and 4 butterfly gardens to groups of 1-15 tourists</li>
+				<li>Assisted in the maintenance of the gardens, greenhouses, and other facilities</li>
+			</ul>
+		</div>
+		<div class="job">
+			<h3 class="jobheader"><span class="jobtitle">Bird Bander</span><span class="jobdate"> (2 Seasons) Sep - Oct 2016/17</span></h3>
+			<h3 class="employer">Thunder Cape Bird Observatory</h3>	
+			<ul>
+				<li>Conducted daily visible migration watch of land and waterbirds</li>
+				<li>Banded and/or processed over 300 birds of 40 species</li>
+				<li>Carefully captured and extracted birds via mist nets, Heligoland, ground, and J traps</li>
+			</ul>
+		</div>
+		<div class="job">
+			<h3 class="jobheader"><span class="jobtitle">Shorebird Survey Technician</span><span class="jobdate">Aug - Sep 2016</span></h3>
+			<h3 class="employer">Canadian Wildlife Service</h3>	
+			<ul>
+				<li>Same duties as above, but only volunteering for half the season</li>
+			</ul>
+		</div>
+		<div class="job">
+			<h3 class="jobheader"><span class="jobtitle">Birding by Ear Instructor</span><span class="jobdate">Jan - Mar 2016</span></h3>
+			<h3 class="employer">University of Guelph Wildlife Club</h3>	
+			<ul>
+				<li>Organized and conducted 10 weekly 1.5 hour workshops on auditory bird identification</li>
+				<li>Instructed over 30 beginner birders on the identification of 170 north-eastern species by ear in a classroom setting</li>
+			</ul>
+		</div>	
+		<div class="job">
+			<h3 class="jobheader"><span class="jobtitle">Birding Guide</span><span class="jobdate">(2 seasons) May 2013/14</span></h3>
+			<h3 class="employer">Outdoor Education Department, Durham District School Board</h3>	
+			<ul>
+				<li>Led groups of up to 25 high school students on birding hikes</li>
+				<li>Helped the participants spot and identify birds and other wildlife</li>
+				<li>Educated students on the natural history of the wildlife we encountered</li>			
+			</ul>
+		</div>
+		<div class="job">
+			<h3 class="jobheader"><span class="jobtitle">Doug Tarry Young Ornithologist Workshop/Internship</span><span class="jobdate">(2 Seasons) Aug 2010/11</span></h3>
+			<h3 class="employer">Long Point Bird Observatory, Birds Canada</h3>	
+			<ul>
+				<li>Erected and maintained an array of 13 mist nets</li>
+				<li>Banded and processed over 140 birds carefully and efficiently</li>
+				<li>Conducted a standard daily census’ of all birds in the field station area and tabulated the data in the daily report</li>			
+			</ul>
+		</div>
+		<div class="job">
+			<h3 class="jobheader"><span class="jobtitle">Assistant Instructor - Birding Course</span><span class="jobdate">(2 Seasons) Apr - Jun 2010/11</span></h3>
+			<h3 class="employer">Durham College</h3>	
+			<ul>
+				<li>Educated 9-12 beginner birders on skills of bird identification in a classroom setting</li>
+				<li>Organized and co-presented a lesson on bird identification by ear</li>
+				<li>Co-lead outdoor field trips and assisted students in applying bird identification skills in the field</li>			
+			</ul>
+		</div>
+		
+	</div>
+</div>
+</body>
+</html>
