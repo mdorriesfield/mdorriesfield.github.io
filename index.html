@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>MarkD Introduction</title>
+<title>About Me</title>
 <link rel = "stylesheet" type = "text/css" href = "mycss.css"/>
 
 <!-- from https://www.w3schools.com/css/css_rwd_viewport.asp -->
@@ -10,17 +10,70 @@
 </head>
 <body>
 
-<ul>
-	<li><a href="index.html">Introduction</a></li>
-	<li><a href="cv.html">CV</a></li>
-	<li><a href="gallery.html">Photo Gallery</a></li>
-</ul>
-
-<h1>Hello my name is Mark</h1>
-
-<img src="images/toad.jpg" alt="toad">
-
-<p>My first paragraph.</p>
-
+<div id="page">
+	<!-- Here is a navigation bar -->
+	<div class="navbar">
+		<ul class="navbar">
+			<li class="linav"><a href="index.html">Introduction</a></li>
+			<li class="linav"><a href="cv.html">CV</a></li>
+		</ul>
+	</div>
+	<div class="banner">
+	<!--1 of 5 unique photographs -->
+		<img class="banner" src="images/JBBanner.jpg" alt="Marsh and Spruce Trees - James Bay, Ontario">
+	</div>
+	<!--some inspiration for layout/content (not so much the coding) from friend's website http://www.onshorebirding.com/about.html -->
+	<div class="content">
+		<!--2 of 5 unique photographs -->
+		<img class="GBBOPortrait insertphoto" src="images/DSC_1276REsize2.jpg" alt="Me with a Great Basin Gophersnake on my hat">
+		<h2 id="aboutme">About Me</h2>
+		<p><strong>Hello there!</strong> My name is Mark Dorriesfield, and I am a field biologist and lifelong naturalist from southern Ontario. 
+		While I love all aspects of the natural world, birding has been my passion since elementary school. This drew ultimately me to attend the 
+		University of Guelph and study Wildlife Biology and Conservation, and it was during my first summer of undergrad that I landed my first 
+		field job: working with breeding Golden-winged Warblers in eastern Manitoba. The next year was even better, as I hopped on the Manitoba 
+		Breeding Bird Atlas point counting crew. Getting paid to be outside, hike around, count birds, and travel to a new each location each day
+		was a dream come true, and it set my path for close to a decade!</p>
+		<p>Since then, I have spent each of the last 9 spring/summer seasons surveying breeding birds throughout North America. During that time
+		I have travelled extensively in Manitoba, Nevada, and Arizona, and completed almost 3500 avian point counts for environmental NGOs. Once I 
+		was finished school in 2016, this allowed me the freedom to pick up field contracts other times of year, so I have spent 2 seasons surveying 
+		migratory shorebirds on the coast of James Bay in Ontario, and 2 falls monitoring and banding birds on the north shore of Lake Superior.
+		Add to this some one-off seasons, such as small mammal trapping in the mountains of Nevada, pre-development surveys in the GTA,
+		and mortality monitoring at a wind farm in southwestern Ontario, and I have accumulated quite the list of experiences (and stories!) along the way.</p>
+		<!--3 of 5 unique photographs -->
+		<img class="GWWA insertphoto" src="images/GWWA.jpg" alt="Me processing a Golden-winged Warbler">
+		<p>During the winters, when fieldwork is scarce in North America, my eyes turned to the wonders of the Neotropics. My first journey to that 
+		part of the world was the winter of 2017-2018, where I volunteered for 2 months leading tours at the Monteverde Butterfly Gardens in Costa Rica.
+		The next year when I was unable to secure a guiding position for the off-season, I decided to travel Ecuador on my own for 2.5 months, 
+		gaining more tropical birding experience in that insanely diverse country. Finally, last fall I spent some time back in Costa Rica, helping out 
+		at an off-grid eco-hostel on the Osa Peninsula. While there I guided the handful of rainy-season guests, and collected daily data for their 
+		property’s eBird Hotspot (which I’d created on my first visit there 2 winters previous) in order to help promote their establishment to 
+		visiting birders.</p>
+		<!--4 of 5 unique photographs -->		
+		<img class="JBPortrait insertphoto" src="images/JBPortrait.jpg" alt="Scoping Shorebirds on James Bay">
+		<p>It’s been a wild run! I’ve been lucky to visit, and return to, some amazing places as a part of some excellent research projects, had
+		some priceless experiences and met amazing people. That said, the life of nomad can be tiring after a while, and the last few years I 
+		have been thinking about staying back in Canada more long-term, and setting my eyes towards more permanent work. Honestly, I was going 
+		to put off that decision one more year, as the Mexican Spotted Owls of southeast Arizona were calling me back for another season… but 
+		covid put an end to those plans! Luckily, I had some online audio transcription work over the winter for Birds Canada, and was able to 
+		pick up some environmental consulting contracts through the summer, and was able to stay afloat. However, with those seasons finished, 
+		covid still raging worldwide and travel really not an option, it seemed like an excellent time to go back to school and re-tool myself 
+		for more permanent work.</p>
+		<p>This is where Fleming’s excellent GIS program came into the picture. While I have been on the data-collection end of research for
+		many years now, I am eager and interested to learn the make use of those data once the field season comes to an end. Since most of 
+		our environmental data have a spatial component, and maps have always been a love of mine, GIS seemed the perfect field of study to dive into.
+		So here I am! In addition to spatial analysis, cartography, remote sensing and many other useful skills, I am also studying web design – 
+		hence the creation of this webpage. I am very excited to build on all of these skills, and once I’m out of school (and covid has hopefully
+		been put in its place), I can return to the workforce in a greater capacity with this new skillset.</p>
+		<p>Below are a few links to some of my nature observations:</p>
+		<div class="linkbox">
+			<ul class="linkslist">
+			<!-- 3 external links -->
+				<li class="link"><a href="https://ebird.org/profile/MjI2ODk2/world" target="_blank">My eBird Profile</a></li>
+				<li class="link"><a href="https://www.inaturalist.org/people/markdorriesfield" target="_blank">My iNaturalist Profile</a></li>
+				<li class="link"><a href="https://www.flickr.com/photos/185959967%40N05/" target="_blank">My Flickr Profile</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
 </body>
 </html>
