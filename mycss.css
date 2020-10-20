@@ -2,21 +2,21 @@ body {
 	background-color: LightGray;
 }
 
-
 #page {max-width: 1000px;
-/*	min-width:720px; */
 	margin: 10px auto 10px auto;
 	padding: 20px;
 	border-width:2px;
 	border-style:solid;
 	border-color:black;
 	background-color: white;
-	font-size: 100%;
 	font-family: Georgia, Times, serif;
 }
 
+h3 {font-size: 1.1em
+}
+
 p {padding: 5px;
-	margin: 10px;
+	margin: 10px;	
 }
 
 li {line-height: 1.5em;}
@@ -67,6 +67,7 @@ li {line-height: 1.5em;}
 	margin: 5px 20px;
 }
 .GBBOPortrait {float: left;
+	margin: 5px 20px 15px 20px;
 }
 .GWWA {float:right;
 }
