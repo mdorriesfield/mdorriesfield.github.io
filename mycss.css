@@ -2,6 +2,7 @@ body {
 	background-color: LightGray;
 }
 
+/* Formatting for page, setting apart from the body behind */
 #page {max-width: 1000px;
 	margin: 10px auto 10px auto;
 	padding: 20px;
@@ -12,53 +13,68 @@ body {
 	font-family: Georgia, Times, serif;
 }
 
-h3 {font-size: 1.1em
+
+h3 {
+	font-size: 1.1em
 }
 
-p {padding: 5px;
+p {
+	padding: 5px;
 	margin: 10px;	
 }
 
-li {line-height: 1.5em;}
+li {
+	line-height: 1.5em;}
 
-.banner {width: 100%
+.banner {
+	width: 100%
 }
 
 /* Code for Navbar */
-.navbar {list-style-type: none;	
-		margin: 0;
-		padding: 0;
-		overflow:hidden;
-		background-color: hsl(115, 67%, 37%);}
+/* adapted from https://www.w3schools.com/css/css_navbar_horizontal.asp */
+.navbar {
+	list-style-type: none;	
+	margin: 0;
+	padding: 0;
+	overflow:hidden;
+	background-color: hsl(115, 67%, 37%);}
 .linav {
 	float: left;
-	}
-.linav a {display: block;
+}
+.linav a {
+	display: block;
 	color: white;
 	text-align: center;
 	padding: 10px 15px;
 	text-decoration: none;
 	font-size: 18px
-	}
-.linav a:hover {background-color: hsl(115, 67%, 43%);
+}
+.linav a:hover {
+	background-color: hsl(115, 67%, 43%);
 }
 
-.content {margin-top: 50px;
-}
 /* Formatting for CV Page */
 /* Formatting Headers in CV */
-.sectionheader {text-transform: uppercase;
-	}
-.jobtitle {width: 50%;
-	text-align: left;}
-.jobdate {width: 50%;
+.sectionheader {
+	text-transform: uppercase;
+}
+.jobtitle {
+	width: 50%;
+	text-align: left;
+}
+.jobdate {
+	width: 50%;
 	float: right;
-	text-align: right;}
-.jobheader {margin-bottom: 5px;
+	text-align: right;
+}
+.jobheader {
+	margin-bottom: 5px;
 	font-weight: bold;
 	margin-bottom: 2px}
-.employer {margin-top: 2px;
-	font-weight: bold;}
+.employer {
+	margin-top: 2px;
+	font-weight: bold;
+}
 
 /* Formatting for About Me Page */
 
@@ -66,12 +82,15 @@ li {line-height: 1.5em;}
 .insertphoto {
 	margin: 5px 20px;
 }
-.GBBOPortrait {float: left;
+.GBBOPortrait {
+	float: left;
 	margin: 5px 20px 15px 20px;
 }
-.GWWA {float:right;
+.GWWA {
+	float:right;
 }
-.JBPortrait {float:left;
+.JBPortrait {
+	float:left;
 }
 /* formatting for links at bottom*/
 /*inspiration from http://www.onshorebirding.com/about.html */
@@ -79,7 +98,9 @@ li {line-height: 1.5em;}
 	margin: 10px;
 	padding: 5px;
 }
-.link a:link {color: black;}
-.link a:visited {color: black;}
-.link a:hover {color: hsl(0, 0%, 60%;
+.link a:link {
+	color: black;
+}
+.link a:visited {
+	color: black;
 }
