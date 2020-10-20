@@ -1,9 +1,3 @@
-body {
-	font-size: 80%;
-	/*font-family: "Courier New", Courier, monospace;*/
-	/*letter-spacing: 0.15em;*/
-	background-color: LightGray;
-}
 
 #page {max-width: 1000px;
 /*	min-width:720px; */
@@ -11,6 +5,8 @@ body {
 	padding: 20px;
 	border: 4px Black;
 	background-color: White;
+	font-size: 100%;
+	font-family: "Times New Roman", Times, serif;
 }
 
 p {padding: 5px;
@@ -27,20 +23,19 @@ p {padding: 5px;
 		background-color: hsl(115, 67%, 43%);}
 
 .linav {float: left;}
-
 .linav a {display: block;
 	padding: 10px 15px;
 	color: white;
 	text-decoration: none;}
-
 .linav a:hover {background-color: hsl(115, 67%, 37%);}
 
 h3 {width: auto;}
 
 li {line-height: 1.5em;}
 
-
-.sectionheader {text-transform: uppercase;}
+/* Formatting Headers in CV */
+.sectionheader {text-transform: uppercase;
+	}
 .jobtitle {width: 50%;
 	text-align: left;}
 .jobdate {width: 50%;
@@ -51,7 +46,8 @@ li {line-height: 1.5em;}
 	margin-bottom: 2px}
 .employer {margin-top: 2px;
 	font-weight: bold;}
-	
+
+
 .GBBOPortrait {float: left;
 	margin: 10px
 }
