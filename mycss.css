@@ -1,19 +1,57 @@
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #dddddd;
-  position: fixed;
-  top: 0;
-  width: 100%;
+body {
+	font-size: 80%;
+	/*font-family: "Courier New", Courier, monospace;*/
+	/*letter-spacing: 0.15em;*/
+	background-color: LightGray;
 }
 
-li a {
-  display: block;
-  padding: 8px;
+#page {max-width: 1000px;
+/*	min-width:720px; */
+	margin: 10px auto 10px auto;
+	padding: 20px;
+	border: 4px Black;
+	background-color: White;
 }
 
-h1 {
-  background-color: DodgerBlue;
-  }
+p {padding: 5px;
+	margin: 10px;
+	border: 2px;
+	border-color: black;
+}
+
+/* Code for Navbar */
+.navbar {list-style-type: none;	
+		margin: 0;
+		padding: 0;
+		overflow:hidden;
+		background-color: hsl(115, 67%, 43%);}
+
+.linav {float: left;}
+
+.linav a {display: block;
+	padding: 10px 15px;
+	color: white;
+	text-decoration: none;}
+
+.linav a:hover {background-color: hsl(115, 67%, 37%);}
+
+h3 {width: auto;}
+
+li {line-height: 1.5em;}
+
+
+.sectionheader {text-transform: uppercase;}
+.jobtitle {width: 50%;
+	text-align: left;}
+.jobdate {width: 50%;
+	float: right;
+	text-align: right;}
+.jobheader {margin-bottom: 5;
+	font-weight: bold;
+	margin-bottom: 2px}
+.employer {margin-top: 2px;
+	font-weight: bold;}
+	
+.GBBOPortrait {float: left;
+	margin: 10px
+}
