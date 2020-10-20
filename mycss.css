@@ -1,18 +1,27 @@
+body {
+	background-color: LightGray;
+}
+
 
 #page {max-width: 1000px;
 /*	min-width:720px; */
 	margin: 10px auto 10px auto;
 	padding: 20px;
-	border: 4px Black;
-	background-color: White;
+	border-width:2px;
+	border-style:solid;
+	border-color:black;
+	background-color: white;
 	font-size: 100%;
-	font-family: "Times New Roman", Times, serif;
+	font-family: Georgia, Times, serif;
 }
 
 p {padding: 5px;
 	margin: 10px;
-	border: 2px;
-	border-color: black;
+}
+
+li {line-height: 1.5em;}
+
+.banner {width: 100%
 }
 
 /* Code for Navbar */
@@ -20,19 +29,23 @@ p {padding: 5px;
 		margin: 0;
 		padding: 0;
 		overflow:hidden;
-		background-color: hsl(115, 67%, 43%);}
-
-.linav {float: left;}
+		background-color: hsl(115, 67%, 37%);}
+.linav {
+	float: left;
+	}
 .linav a {display: block;
-	padding: 10px 15px;
 	color: white;
-	text-decoration: none;}
-.linav a:hover {background-color: hsl(115, 67%, 37%);}
+	text-align: center;
+	padding: 10px 15px;
+	text-decoration: none;
+	font-size: 18px
+	}
+.linav a:hover {background-color: hsl(115, 67%, 43%);
+}
 
-h3 {width: auto;}
-
-li {line-height: 1.5em;}
-
+.content {margin-top: 50px;
+}
+/* Formatting for CV Page */
 /* Formatting Headers in CV */
 .sectionheader {text-transform: uppercase;
 	}
@@ -47,7 +60,26 @@ li {line-height: 1.5em;}
 .employer {margin-top: 2px;
 	font-weight: bold;}
 
+/* Formatting for About Me Page */
 
-.GBBOPortrait {float: left;
-	margin: 10px
+/* formatting of insert photos*/
+.insertphoto {
+	margin: 5px 20px;
 }
+.GBBOPortrait {float: left;
+}
+.GWWA {float:right;
+}
+.JBPortrait {float:left;
+}
+/* formatting for links at bottom*/
+/*inspiration from http://www.onshorebirding.com/about.html */
+.linkbox {max-width: auto;
+}
+.linkslist {list-style-type: none;
+	margin: 10px;
+	padding: 5px;
+}
+.link a:link {color: black;}
+.link a:visited {color: black;}
+.link a:hover {color: hsl(0, 0%, 60%;}
