@@ -54,7 +54,7 @@ li {line-height: 1.5em;}
 .jobdate {width: 50%;
 	float: right;
 	text-align: right;}
-.jobheader {margin-bottom: 5;
+.jobheader {margin-bottom: 5px;
 	font-weight: bold;
 	margin-bottom: 2px}
 .employer {margin-top: 2px;
@@ -75,12 +75,11 @@ li {line-height: 1.5em;}
 }
 /* formatting for links at bottom*/
 /*inspiration from http://www.onshorebirding.com/about.html */
-.linkbox {max-width: auto;
-}
 .linkslist {list-style-type: none;
 	margin: 10px;
 	padding: 5px;
 }
 .link a:link {color: black;}
 .link a:visited {color: black;}
-.link a:hover {color: hsl(0, 0%, 60%;}
+.link a:hover {color: hsl(0, 0%, 60%;
+}
