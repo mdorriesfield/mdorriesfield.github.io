@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add Map</title>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu_dkNZ5N8suIkb7f2cPYKKZryJ0af--0&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+    <style type="text/css">
+      /* Set the size of the div element that contains the map */
+      #map {
+        height: 600px;
+        /* The height is 600 pixels */
+        width: 600px;
+        /* The width is 600px */
+        margin: 15px auto;
+      }
+      h2 {
+          text-align: center;
+      }
+    </style>
+    <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Uluru
+        const UofG = { lat: 43.53271365239879, lng: -80.22618101071347 };
+        // The map, centered at Haliburton Scout Reserve
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 15,
+          center: UofG,
+        });
+        // The marker, positioned at Haliburton Scout Reserve
+        const marker = new google.maps.Marker({
+          position: UofG,
+          map: map,
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <h2>My Google Maps Demo: Location of my Undergrad</h2>
+    <!--The div element for the map -->
+    <div id="map"></div>
+  </body>
+</html>
